@@ -1,0 +1,976 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+*,
+*:before
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/* Первый экран
+====================================*/
+
+.navbar{
+    background-color: none;
+    /* для фона меню */
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar.sticky{
+    padding: 10px 0;
+    background-color: #132b48e0;
+}
+
+.max-width{
+    max-width: 1200px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 45px;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 17px;
+    transition: color .3s  ease linear;
+    text-transform: uppercase;
+}
+
+.navbar .menu li a:hover{
+    color: #d4d6de;
+
+}
+
+.aqua{
+    display: flex;
+    background: url("../img/1.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.aqua__title{
+    font-size: 90px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+
+.aqua__subtitle{
+    font-size: 70px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+/* Второй экран 1 блок
+====================================*/
+
+.about{
+    margin: 100px 0 50px 0;
+}
+.about__title{
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+.about__title::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #760101;
+    margin: 30px auto ;
+}
+.about__text{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    width: 100%;
+    max-width: 922px;
+}
+/* Второй экран 2 блок
+====================================*/
+.section{
+    margin: 70px 0;
+}
+
+.about__title{
+    font-size: 30px;
+}
+.about__content{
+    padding: -1px 40px 40px 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.services__item{
+    width: 45%;
+}
+.text{
+    font-size: 35px;
+    line-height: 45px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.text__p{
+    font-size: 16px;
+    line-height: 170%;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+}
+/* Services
+====================================*/
+.services{
+    background-color: #F0F4F7;
+    padding: 50px 0;
+}
+
+.services__content{
+    padding: 40px 40px 40px 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.services__item{
+    width: 45%;
+}
+
+.services__title{
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #000;
+    font-size: 25px;
+}
+
+.services__text{
+    font-size: 16px;
+    line-height: 170%;
+    max-width: 489px;
+}
+
+.btn{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 20px;
+        padding: 14px 40px;
+        border-radius: 6px;
+        border: 0;
+        cursor: pointer;
+        font-family: inherit sans-serif;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 600px;
+        text-transform: inherit;
+        text-decoration: none;
+        transition: background .1s linear;
+    }
+
+.btn--red{
+        background-color: #006982;
+    }
+.btn--red:hover{
+        background-color: #A4CB34;
+    }
+
+.serv1{
+    width:45%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    transition: .6s; /* Время эффекта */
+}
+.serv1:hover{
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+/* Map
+====================================*/
+.map{
+    margin: 90px 0;
+}
+
+.map__content{
+    width: 40%;
+}
+
+.map__subtitle{
+    color: #760101;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.map__title{
+    color: #000;
+    text-transform: uppercase;
+    line-height: 170%;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 16px 0;
+    font-weight: medium;
+    width: 100%;
+    max-width: 200px;
+}
+.map__text{
+    line-height: 170%;
+    font-size: 15px;
+}
+
+.map__img{
+    width: 50%;
+    margin: 50px 0;
+    object-fit: cover;
+}
+.object__content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Paradise
+====================================*/
+.paradise{
+     margin: 90px 0;
+}
+
+.paradise__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.one__block{
+    width:50%;
+
+}
+.one__block img{
+    object-fit: cover;
+}
+
+.two__block{
+    width:47%;
+}
+
+.two__block img{
+    width:76%;
+    object-fit: cover;
+}
+
+.parad__subtitle{
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #760101;
+    text-transform: uppercase;
+}
+
+.parad__title{
+    color: #000;
+    text-transform: uppercase;
+    line-height: 170%;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 8px 0;
+    font-weight: medium;
+    width: 100%;
+    max-width: 200px;
+}
+
+.parad__text{
+    line-height: 170%;
+    font-size: 15px;
+    width: 100%;
+    max-width: 457px;
+
+}
+/* Footer
+====================================*/
+
+.footer__container{
+    margin-top: 60px;
+}
+
+.footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+    margin-bottom: 50px;
+}
+
+.footer__heading{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+.footer__heading h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer__heading a{
+    font-size: 18px;
+    color: #909090;
+    margin-bottom: 9px;
+}
+
+.footer__heading a:hover{
+    color: #000;
+    transition: .3s ease-out;
+}
+
+#footer__email{
+    width: 273px;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer__email-form h2{
+    margin-top: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#footer__email::placeholder{
+    color: #A1A1A1;
+}
+
+#footer__email-btn{
+    width: 112px;
+    height: 40px;
+    background-color: #848484;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#footer__email-btn:hover{
+    cursor: pointer;
+    background-color: #656565;
+    transition: all .4s ease-out;
+}
+
+.paim{
+ float: right;
+}
+
+.paim img{
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 2 pages RESTAURANT
+====================================
+===================================*/
+.restaurant{
+    display: flex;
+    background: url("../img/31.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.rest__text{
+    font-size: 35px;
+    line-height: 45px;
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.rest__text::before{
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background-color: #000;
+    margin-right: 15px;
+    margin-bottom: 6px;
+}
+
+.serv5{
+    width:45%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.sing{
+    width: 300px;
+    object-fit: cover;
+    margin-top: 30px;
+    float: right;
+
+}
+
+.services__item p{
+    font-size: 16px;
+
+}
+
+.services__item h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+    padding-top: 15px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.sign__title{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000;
+}
+
+.sign__text{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 170%;
+}
+/* 3 pages VILLAS
+====================================
+===================================*/
+
+.villas{
+    display: flex;
+    background: url("../img/9.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.villas__beach{
+    padding: 50px 0;
+}
+
+.villas__content{
+    border: 1px solid #ccc;
+    padding: 27px 27px 27px 27px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.villas__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vil{
+    padding-top: 20px;
+    color: #1F5E5F;
+}
+
+
+.vil1{
+    width:45%;
+    object-fit: cover;
+}
+
+.villas__item{
+    width: 48%;
+}
+
+.villas__title{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 35px;
+    font-family: 'Cormorant Garamond', serif;
+}
+/* 3 pages Room page
+====================================
+===================================*/
+.roompage{
+    display: flex;
+    background: url("../img/10.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+/* Services
+====================================*/
+.room__main{
+    padding: 50px 0;
+}
+
+.room__content{
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img__item{
+    width: 45%;
+}
+
+.oter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.serv3{
+    width:100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.serv2{
+    width:22%;
+    object-fit: cover;
+    padding-right: 15px;
+    transition: .5s; /* Время эффекта */
+}
+
+.serv2:hover{
+    transform: scale(2.5); /* Увеличиваем масштаб */
+}
+
+
+.serv2:last-child{
+    padding-right: 0px;
+}
+
+.services__item{
+    width: 45%;
+}
+
+.room__title{
+    text-transform: uppercase;
+    text-align: start;
+    padding-bottom: 15px;
+    color: #000;
+    font-size: 35px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.room__text{
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.room__icon{
+    margin-top: 20px;
+}
+
+.room_icon__title{
+    font-size: 27px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+.all__app{
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app1{
+    width: 52%;
+    margin-bottom: 20px;
+}
+
+.room_app{
+    margin-top: 26px;
+
+}
+
+.room__img{
+    padding-right: 8px;
+}
+
+.app2{
+    width: 42%;
+    margin-bottom: 20px;
+}
+
+/* Меню аккардион №3 */
+
+.content{
+    margin: 80px auto;
+}
+
+.accordion{
+   width: 600px;
+   border-bottom: 1px solid #BABABA;
+}
+.accordion__header {
+    padding: 20px 0 20px 0;
+    padding-right: 50px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    cursor: pointer;
+}
+.accordion__header::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../img/sort-down-solid.svg") no-repeat center;
+    background-size: contain;
+    transition: all .4s ease;
+}
+.accordion__body {
+    padding: 0 0px 20px 0px;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #5f6c7b;
+    line-height: 1.5;
+    display: none;
+}
+.open-accordion .accordion__body {
+    display: block;
+}
+.open-accordion .accordion__header::after {
+    transform: rotate(-180deg);
+}
+
+.accomodation__p{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.accomodation__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.beachvilla{
+    display: flex;
+    background: url("../img/11.png") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.watervilla{
+    display: flex;
+    background: url("../img/20.png") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.two_bedroomvilla{
+    display: flex;
+    background: url("../img/22.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.oceanvilla{
+    display: flex;
+    background: url("../img/24.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.resedentvilla{
+     display: flex;
+    background: url("../img/30.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    min-height: 500px;
+}
+
+.error{
+    background: url("../img/29.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+ .copyright__text{
+     padding: 70px 0 20px 0;
+     text-align: center;
+     font-size: 14px;
+     line-height: 1.5;
+
+ }
+
+/* Adoptive */
+
+@media (max-width: 950px){
+    .max-width{
+        padding: 0 30px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .fa, .fas{
+        color: #fff;
+        font-size: 28px;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+
+    }
+    .navbar .menu{
+        position: fixed;
+        background: #132b48e0;
+        height: 100vh;
+        width: 100%;
+        padding-top: 80px;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        transition: all .3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+        margin: 0;
+    }
+
+
+    .navbar .menu a{
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    .aqua__title{
+        font-size: 60px;
+    }
+    .aqua__subtitle{
+         font-size: 40px;
+    }
+
+    /* Второй экран 2 блок  */
+
+    .text{
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+        line-height: 135%;
+    }
+
+    .services__content{
+    flex-direction: column;
+    padding: 40px 40px 40px 40px;
+
+    }
+    .serv1{
+        width: 100%;
+    }
+    .serv5{
+        width: 100%;
+    }
+
+    .serv1:hover{
+        transform: none; /* Увеличиваем масштаб */
+    }
+    .serv3{
+        width: 100%;
+    }
+    .serv3:hover{
+     transform: none; /* Увеличиваем масштаб */
+    }
+    .services__item{
+        width: 100%;
+        margin: 0px 0px 45px 0px;
+    }
+
+    .map__content{
+        width: 100%;
+    }
+    .map__img{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .paradise__container{
+        flex-direction: column;
+    }
+    .one__block{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .two__block{
+        width: 100%;
+    }
+    .parad__text{
+        width: 100%;
+    }
+
+   /* Villas */
+
+    .villas__content{
+    flex-direction: column;
+    padding: 11px 11px 11px 11px;
+    }
+
+    .vil1{
+        width: 100%;
+    }
+
+    .villas__item{
+        width: 100%;
+        margin: 45px 0px 45px 0px;
+    }
+
+    .serv2{
+        width: 100%;
+        margin-bottom: 30px;
+        padding-right: 0px;
+    }
+
+    .serv2:hover{
+    transform:none; /* Увеличиваем масштаб */
+
+    }
+
+    .img__item{
+        width: 100%;
+    }
+
+    .content{
+        margin: 0;
+    }
+    .accordion{
+        width: 100%;
+    }
+    .accordion__header{
+        font-size: 15px;
+    }
+
+    .accomodation__p{
+        font-size: 22px;
+    }
+    .accomodation__content{
+        flex-direction: column;
+    }
+
+    .acc img{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer__email-form{
+        width: 200px;
+    }
+
+    .paint{
+        float: none;
+    }
+
+}
+
+@media (max-width: 580px){
+
+    .aqua__title{
+        font-size: 35px;
+    }
+    .aqua__subtitle{
+         font-size: 28px;
+    }
+}
+
+
